@@ -1,335 +1,500 @@
 * {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 img {
-	max-width: 100%;
+    max-width: 100%;
+    height: auto;
 }
 body {
-	font-size: 20px; 
-	font-family: 'Montserrat', sans-serif;
+    font-size: 20px; 
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
 }
 
 /* Header Style */
 .header-wrapper {
-	background: black; 
-	color: #fff;
-	font-weight: 200;
-	font-size: 0.75em;	
+    background: black; 
+    color: #fff;
+    font-weight: 200;
+    font-size: 0.75em;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 .header-wrapper ul {
-	display: flex;
-  -webkit-box-pack: justify;
-  justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
 .internal-wrapper {
-	width: 980px;
-	padding: 0 10px;
-	margin: 0 auto;
+    max-width: 980px;
+    padding: 0 22px;
+    margin: 0 auto;
+    width: 100%;
 }
 .header-wrapper .header-links-wrapper ul  li a {
-	text-decoration: none;
-	color: #fff;
+    text-decoration: none;
+    color: #fff;
 }
 .header-wrapper ul {
-	list-style: none;
+    list-style: none;
 }
 .header-wrapper .header-links-wrapper ul  li {
-	display: inline-block;
-  padding: 14px 0 8px;
-  height: 25px;
-  opacity: 0.8;
+    display: inline-block;
+    padding: 14px 0 8px;
+    height: 25px;
+    opacity: 0.8;
 }
 .header-wrapper .header-links-wrapper ul  li:hover {
-	opacity: 1;
-}	
+    opacity: 1;
+}   
 .logo-link, .search-link, .cart-link {
-	width: 18px;	
-	display: block;
+    width: 18px;    
+    display: block;
 }
 .header-wrapper .header-links-wrapper ul  li.logo-link {
-	padding: 12px 0 10px;
+    padding: 12px 0 10px;
 }
 .header-wrapper .header-links-wrapper ul  li.search-link {
-	padding: 14px 0 8px;
+    padding: 14px 0 8px;
 }
 .header-wrapper .header-links-wrapper ul  li.cart-link {
-	padding: 12px 0 10px;
+    padding: 12px 0 10px;
 }
 
 /* Footer Styling */
 .footer-wrapper {
-  background-color: #f5f5f7;
-  color: #1d1d1f;
-  font-size: .65em;
+    background-color: #f5f5f7;
+    color: #1d1d1f;
+    font-size: .65em;
 }
 .upper-text-container {
-  border-bottom: 1px solid #d2d2d7;
-  color: #86868b;
-  padding: 17px 0 20px;
+    border-bottom: 1px solid #d2d2d7;
+    color: #86868b;
+    padding: 17px 0 20px;
 }
 .upper-text-container a {
-	text-decoration: none;
-	color: #515154; 
+    text-decoration: none;
+    color: #515154; 
 }
 .upper-text-container a:hover {
-	text-decoration: underline;
+    text-decoration: underline;
 }
 .footer-links-wrapper {
-	display: flex;
-  -webkit-box-pack: justify;
-  justify-content: space-between;
-  padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
 }
 .footer-wrapper ul {
-	list-style: none;
-	padding-bottom: 20px;
+    list-style: none;
+    padding-bottom: 20px;
 }
 .footer-wrapper ul li{
-	padding: 5px 0;
-	font-size: 0.9em;
+    padding: 5px 0;
+    font-size: 0.9em;
 }
 .footer-links-wrapper a {
-	color: #515154;
-	text-decoration: none;
+    color: #515154;
+    text-decoration: none;
 }
 .footer-links-wrapper a:hover {
-	text-decoration: underline;
+    text-decoration: underline;
 }
 .footer-links-wrapper h3 {
-	font-size: 12px;
-	font-weight: 600;
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 20px;
 }
 .my-apple-wrapper {
-	border-bottom: 1px solid #d2d2d7;
-	padding-bottom: 10px;
-	margin-bottom: 10px; 
+    border-bottom: 1px solid #d2d2d7;
+    padding-bottom: 10px;
+    margin-bottom: 10px; 
 }
 .copyright-wrapper {
-	display: flex;
-  -webkit-box-pack: justify;
-  justify-content: space-between;
-  padding: 10px 0 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0 20px;
+    flex-wrap: wrap;
 }
 .footer-links-terms ul li {
-  display: inline-block;
-  padding: 0 5px;
-  border-right: 1px solid #ccc;
+    display: inline-block;
+    padding: 0 5px;
+    border-right: 1px solid #ccc;
 }
 .footer-links-terms ul li:last-child {
-	border-right: 0px;
+    border-right: 0px;
 }
 .footer-links-terms ul li a {
-	text-decoration: none;
-	color: #515154;
+    text-decoration: none;
+    color: #515154;
 }
 .footer-links-terms ul li a:hover {
-	text-decoration: underline;
+    text-decoration: underline;
 }
 .footer-country {
-	display: inline-block;
+    display: inline-block;
 }
 .flag-wrapper {
-	display: inline-block;
-	vertical-align: middle;
+    display: inline-block;
+    vertical-align: middle;
 }
 .footer-country-name{
-	display: inline-block;
-	vertical-align: top;
+    display: inline-block;
+    vertical-align: top;
 }
 
 /* Main Highlight */
 .main-highlight-wrapper {
-	background: #fafafa;
-	text-align: center;
-	padding: 25px 0;
+    background: #fafafa;
+    text-align: center;
+    padding: 25px 0;
 }
 .links-wrapper ul {
-	list-style: none;
+    list-style: none;
 }
 .model {
-	font-size: .85em;
+    font-size: .85em;
 }
 .product-title {
-	font-weight: 700;
-	font-size: 56px;
+    font-weight: 700;
+    font-size: 56px;
 }
 .brief-description {
-	font-size: 2em;
+    font-size: 2em;
 }
 .links-wrapper {
-	padding: 15px 0;
+    padding: 15px 0;
 }
 .links-wrapper ul li {
-	display: inline-block;
-	padding-right: 20px;
+    display: inline-block;
+    padding-right: 20px;
 }
 .links-wrapper ul li a {
-	color: #06c;
-	text-decoration: none;
+    color: #06c;
+    text-decoration: none;
 }
 .links-wrapper ul li a:hover {
-	color: #000;
+    color: #000;
 }
 .links-wrapper ul li a:after {
-  font-family: "FontAwesome";
-  font-weight: 900;
-  content: "\f105";
-  padding-left: 10px;
+    font-family: "FontAwesome";
+    font-weight: 900;
+    content: "\f105";
+    padding-left: 10px;
 }
 
 /* Second Highlight Section */
 .second-hightlight-wrapper {
-	background-image: url("../images/home/iphone11-pro-bg.jpg");
-	height: 580px;
-	background-position: center;
-	background-repeat: no-repeat;
-  background-size: cover;
-	text-align: center;
-	padding: 65px 20px;
-	color: #fff;
+    background-image: url("../images/home/iphone11-pro-bg.jpg");
+    height: 580px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 65px 20px;
+    color: #fff;
 }
 .title-wraper {
-	font-weight: 600;
-	font-size: 56px;	
+    font-weight: 600;
+    font-size: 56px;    
 }
 .description-wrapper {
-	font-size: 26px;
-	padding: 10px 0;
+    font-size: 26px;
+    padding: 10px 0;
 }
 .price-wrapper {
-	color: #86868b; 
-	font-size: 0.85em;
+    color: #86868b; 
+    font-size: 0.85em;
 }
 
 /* Third Highlight Section */
 .third-highlight-wrapper {
-	background-image: url("../images/home/iphone11-bg.jpg");
-	height: 580px;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	text-align: center;
-	padding: 65px 20px;
+    background-image: url("../images/home/iphone11-bg.jpg");
+    height: 580px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 65px 20px;
 }
 
 /*Fourth Highlight Section */
 .fourth-heghlight-wrapper {
-	display: flex;
-  -webkit-box-pack: justify;
-  justify-content: space-between;
-  background: #fff;
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    flex-wrap: wrap;
 }
 .left-side-wrapper {
-	height: 580px;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	text-align: center;
-	width: 48.5%;
-	margin: 1% 0.5% 0% 1%; 
-	padding-top: 54px;
+    height: 580px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    width: 48.5%;
+    margin: 1% 0.5% 0% 1%; 
+    padding-top: 54px;
 }
 .fourth-heghlight-wrapper .left-side-wrapper {
-	background-image:  url("../images/home/watch-series-5.jpg"); 
+    background-image:  url("../images/home/watch-series-5.jpg"); 
 }
 .right-side-wrapper {
-	height: 580px;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	text-align: center;	
-	width: 48.5%;
-	margin: 1% 1% 0% 0.5%; 
-	padding-top: 54px;
+    height: 580px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;    
+    width: 48.5%;
+    margin: 1% 1% 0% 0.5%; 
+    padding-top: 54px;
 }
 .fourth-heghlight-wrapper .right-side-wrapper {
-	background-image:  url("../images/home/apple-card.jpg"); 
+    background-image:  url("../images/home/apple-card.jpg"); 
 }
 .description-wraper {
-	max-width: 430px;
-	margin: 0 auto;
-	padding: 10px; 
+    max-width: 430px;
+    margin: 0 auto;
+    padding: 10px; 
 }
 
 /*Fivth Highlight Section */
 .fifth-heghlight-wrapper {
-	display: flex;
-  -webkit-box-pack: justify;
-  justify-content: space-between;
-  background: #fff;
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    flex-wrap: wrap;
 }
 .fifth-heghlight-wrapper .left-side-wrapper {
-	background-image:  url("../images/home/apple-tv-background.jpg"); 
+    background-image:  url("../images/home/apple-tv-background.jpg"); 
 }
 .fifth-heghlight-wrapper .right-side-wrapper {
-	background-image:  url("../images/home/air-pods.jpg"); 
-	color: #fff; 
-	background-size: initial;
-	background-color: #000;
-	background-position: bottom;
+    background-image:  url("../images/home/air-pods.jpg"); 
+    color: #fff; 
+    background-size: initial;
+    background-color: #000;
+    background-position: bottom;
 }
 .logo-wrapper {
-	font-size: 40px;
-	font-weight: bold;
+    font-size: 40px;
+    font-weight: bold;
 }
 .tvshow-logo-wraper {
-	padding: 180px 0 200px;
+    padding: 180px 0 200px;
 }
 .watch-more-wrapper a {
-	text-decoration: none;
-	font-size: 0.85em;
+    text-decoration: none;
+    font-size: 0.85em;
 }
 .watch-more-wrapper a:after {
-  font-family: "FontAwesome";
-  font-weight: 900;
-  content: "\f144";
-  padding-left: 15px;
+    font-family: "FontAwesome";
+    font-weight: 900;
+    content: "\f144";
+    padding-left: 15px;
 }
 /*Sixth Highlight Section */
 .sixth-heghlight-wrapper {
-	display: flex;
-  -webkit-box-pack: justify;
-  justify-content: space-between;
-  background: #fff;
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    flex-wrap: wrap;
 }
 .sixth-heghlight-wrapper .left-side-wrapper {
-	background-image:  url("../images/home/macbook-pro.jpg"); 
-	background-size: initial;
-	background-color: #fafafa;
-	background-position: bottom;
+    background-image:  url("../images/home/macbook-pro.jpg"); 
+    background-size: initial;
+    background-color: #fafafa;
+    background-position: bottom;
 }
 .sixth-heghlight-wrapper .right-side-wrapper {
-	background-image:  url("../images/home/new-ipad.jpg"); 
+    background-image:  url("../images/home/new-ipad.jpg"); 
 }
 .product-title-small {
-	font-weight: 700;
-	font-size: 45px;
+    font-weight: 700;
+    font-size: 45px;
 }
 
+/* Responsive Styles */
+@media only screen and (max-width: 1070px) {
+    .internal-wrapper {
+        padding: 0 20px;
+    }
+    
+    .header-wrapper .header-links-wrapper ul li {
+        padding: 14px 8px;
+    }
+    
+    .header-wrapper .header-links-wrapper ul li:nth-child(2),
+    .header-wrapper .header-links-wrapper ul li:nth-child(3),
+    .header-wrapper .header-links-wrapper ul li:nth-child(4),
+    .header-wrapper .header-links-wrapper ul li:nth-child(5),
+    .header-wrapper .header-links-wrapper ul li:nth-child(6),
+    .header-wrapper .header-links-wrapper ul li:nth-child(7) {
+        display: none;
+    }
+    
+    .header-wrapper .header-links-wrapper ul {
+        justify-content: flex-start;
+    }
+    
+    .logo-link {
+        margin-right: auto;
+    }
+    
+    .search-link, .cart-link {
+        margin-left: 20px;
+    }
+    
+    .footer-links-wrapper > div {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+}
 
+@media only screen and (max-width: 735px) {
+    body {
+        font-size: 18px;
+    }
+    
+    .product-title {
+        font-size: 40px;
+    }
+    
+    .brief-description {
+        font-size: 1.5em;
+    }
+    
+    .title-wraper {
+        font-size: 40px;
+    }
+    
+    .description-wrapper {
+        font-size: 21px;
+    }
+    
+    .left-side-wrapper, .right-side-wrapper {
+        width: 100%;
+        margin: 10px 0;
+    }
+    
+    .fourth-heghlight-wrapper, 
+    .fifth-heghlight-wrapper, 
+    .sixth-heghlight-wrapper {
+        flex-direction: column;
+    }
+    
+    .footer-links-wrapper > div {
+        width: 100%;
+    }
+    
+    .copyright-wrapper {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .footer-links-terms {
+        margin: 10px 0;
+    }
+    
+    .footer-country {
+        margin-top: 10px;
+    }
+    
+    .second-hightlight-wrapper, 
+    .third-highlight-wrapper,
+    .left-side-wrapper, 
+    .right-side-wrapper {
+        height: 500px;
+    }
+}
 
+@media only screen and (max-width: 480px) {
+    body {
+        font-size: 16px;
+    }
+    
+    .product-title {
+        font-size: 32px;
+    }
+    
+    .brief-description {
+        font-size: 1.2em;
+    }
+    
+    .title-wraper {
+        font-size: 32px;
+    }
+    
+    .description-wrapper {
+        font-size: 18px;
+    }
+    
+    .product-title-small {
+        font-size: 32px;
+    }
+    
+    .second-hightlight-wrapper, 
+    .third-highlight-wrapper,
+    .left-side-wrapper, 
+    .right-side-wrapper {
+        height: 450px;
+        padding: 40px 15px;
+    }
+    
+    .logo-wrapper {
+        font-size: 32px;
+    }
+    
+    .tvshow-logo-wraper {
+        padding: 120px 0 150px;
+    }
+    
+    .footer-links-terms ul li {
+        display: block;
+        border-right: none;
+        padding: 5px 0;
+        text-align: center;
+    }
+}
 
+/* Mobile menu for smaller screens */
+.mobile-menu-toggle {
+    display: none;
+}
 
+@media only screen and (max-width: 1070px) {
+    .mobile-menu-toggle {
+        display: block;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 24px;
+        cursor: pointer;
+        padding: 10px;
+    }
+    
+    .header-links-wrapper {
+        position: relative;
+    }
+    
+    .header-wrapper .header-links-wrapper ul {
+        flex-wrap: wrap;
+    }
+}
 
+/* Animation for smoother transitions */
+.main-highlight-wrapper,
+.second-hightlight-wrapper,
+.third-highlight-wrapper,
+.fourth-heghlight-wrapper,
+.fifth-heghlight-wrapper,
+.sixth-heghlight-wrapper {
+    transition: all 0.3s ease;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Improved focus states for accessibility */
+a:focus, button:focus {
+    outline: 2px solid #06c;
+    outline-offset: 2px;
+}
