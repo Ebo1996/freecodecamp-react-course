@@ -49,7 +49,3 @@ This project is a responsive Apple website clone built with React. It demonstrat
 - `npm start` - Run development server
 - `npm run build` - Build for production
 - `npm test` - Run tests
-
-#---
-
-Feel free to customize this README for your needs!
